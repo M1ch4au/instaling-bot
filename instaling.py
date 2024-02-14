@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains 
 import time
 
 username = ""
@@ -9,7 +10,7 @@ password = ""
 
 words_list = {}
 
-words_file = open(r"slownik.txt", 'r', encoding='utf-8')
+words_file = open(r"slownik.txt", 'a+', encoding='utf-8')
 for x in words_file:
     x_corrected = x.rstrip('\n')
     words_list[x_corrected.split(":")[0]] = x_corrected.split(":")[1]
@@ -20,13 +21,16 @@ print(words_list)
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--mute-audio")
 #otwieranie chrome
-driver = webdriver.Chrome(chrome_options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 driver.set_window_size(1200, 900)
 #uruchomienie strony
 driver.get("https://instaling.pl/")
 assert "Insta.Ling" in driver.title
 main_login_button = driver.find_element(By.CSS_SELECTOR, "a[class='btn navbar-profile p-0 m-0 pr-2']")
+zgody_marketingowe = driver.find_element(By.CSS_SELECTOR, "p[class='fc-button-label']")
 #klikniecie na przycisk zaloguj na stronie glownej
+zgody_marketingowe.click()
+time.sleep(1)
 main_login_button.click()
 time.sleep(1)
 login_field = driver.find_element(By.ID, "log_email")
@@ -44,10 +48,16 @@ except NoSuchElementException:
 #klikniecie na przycisk dokonczenia sesji
 finish_session_button.click()
 time.sleep(1)
-continue_session_button = driver.find_element(By.ID, "continue_session_button")
-#klikniecie na przycisk kontynuowania sesji
-continue_session_button.click()
-time.sleep(1)
+try:
+    start_session_button = driver.find_element(By.CSS_SELECTOR, "div[id='start_session_button']")
+    # klikniecie na przycisk rozpoczęcia sesji
+    start_session_button.click()
+    time.sleep(1)
+except ElementNotInteractableException:
+    continue_session_button = driver.find_element(By.ID, "continue_session_button")
+    # klikniecie na przycisk kontynuowania sesji
+    continue_session_button.click()
+    time.sleep(1)
 
 while True:
     word = driver.find_element(By.CLASS_NAME, "translations").text
@@ -72,10 +82,11 @@ while True:
             skip.click()
             time.sleep(1)
             continue
+        time.sleep(1)
         answer = driver.find_element(By.ID, "word").text
         print("Odpowiedz: " + answer)
         words_list[word] = answer
-        words_file = open(r"slownik.txt", 'a', encoding='utf-8')
+        words_file = open(r"slownik.txt", 'a+', encoding='utf-8')
         words_file.write("\n"+word+":"+answer)
         words_file.close()
         time.sleep(1)
