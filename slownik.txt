@@ -175,3 +175,156 @@ oceniać źródła:evaluate sources
 prześwietlać (promieniami Roentgena):x-ray
 media drukowane:print-based media
 zwichnięta kostka:sprained ankle
+krople:drops
+dzióbek (ułożenie ust do zdjęcia):duck-face
+przycinać:crop
+futro:fur
+pozować:pose
+obejrzeć filmik:view a video
+stacja telewizyjna:TV station
+odłączyć z kontaktu:unplug
+chorować na coś:suffer from something
+lodowaty; oblodzony:icy
+powierzchnia:surface
+rozmaity; różnorodny; odmienny:diverse
+dziedzictwo; spadek:heritage
+rozbudzać emocje:engage emotions
+wiewiórka:squirrel
+szop pracz:racoon
+pochód, marsz:march
+silne przekonanie:strong belief
+ze względu na coś:for the sake of something
+równik:equator
+zachowywać; ocalać:preserve
+pierwszeństwo; priorytet:priority
+wpadać w poślizg:skid
+spadać, obniżać się:drop
+pudel:poodle
+krzew:shrub
+przybrzeżny; nadbrzeżny:coastal
+ślizgacz:speedboat
+trwały, zrównoważony:sustainable
+gniazdo:nest
+zanurzać:submerge
+śmieci:litter
+turkusowy:turquoise
+niezaprzeczalny:undeniable
+latarka:torch
+nie w formie:off-colour
+rozchwiany:off-balance
+poprawa, zmiana na lepsze:upturn
+rozczarowanie:letdown
+uznawać; pochwalać:approve
+być niegrzecznym; źle się zachowywać:misbehave
+podrzędny; niższy; gorszy:inferior
+istotny:relevant
+prawdopodobny:probable
+adekwatny; odpowiedni:adequate
+drzemka:nap
+przejście, przemiana:transition
+cierpieć na brak:lack
+młodość; młodzież:youth
+niewłaściwie oceniać:misjudge
+dojrzały:mature
+łańcuch pokarmowy:food chain
+trzęsienie ziemi:earthquake
+mądry:wise
+delikatny; łagodny; szlachecki:gentle
+oszustwo; okłamanie:deception
+krem do opalania:sunscreen
+zwinny; ruchliwy; obrotny:agile
+pingwin cesarski:emperor penguin
+komar:mosquito
+rywalizujący; lubiący konkurencję; konkurencyjny:competitive
+ewoluować; rozwijać (się):evolve
+cecha:trait
+lojalny:loyal
+susza; posucha:drought
+łata; skrawek; połać (ziemi); grządka:patch
+głupiutki:bird-brained
+podobieństwo:resemblance
+zamieć (burza śnieżna):blizzard
+udomowiony; oswojony:domesticated
+uczuciowy; czuły; tkliwy:affectionate
+lawina:avalanche
+szympans:chimpanzee
+rozbawiony:playful
+wrona:crow
+kosz na śmieci; skrzynia:bin
+rów; kanał:ditch
+wymarcie; wyginięcie:extinction
+wykluwać się:hatch
+zanieczyszczenie; skażenie:contamination
+sad:orchard
+niedobór; brak:shortage
+gatunek:species
+łąka:meadow
+strumień:stream
+migracja:migration
+pogórze:foothill
+ulegający biodegradacji:biodegradable
+równina:plain
+teren zabudowany:built-up area
+uwięziony:trapped
+na wolności:on the loose
+bojownik ruchu ekologicznego:eco-warrior
+szkody nie do naprawienia:irreparable damage
+zaorane pole:ploughed field
+wypuścić na wolność, uwolnić do środowiska naturalnego:release into the wild
+rozwijająca się populacja:thriving population
+lęgowisko:breeding ground
+w niewoli:in captivity
+jednorazowe opakowania plastikowe:single-use plastics
+wcierać:rub
+mieć krótki czas skupienia uwagi:have a short attention span
+nisko płatny:badly-paid
+męczący:tiring
+wymagający; ambitny; trudny:challenging
+satysfakcjonujący; opłacalny:rewarding
+monotonny:monotonous
+bez perspektyw (praca):dead-end
+motywujący:motivating
+niewymagający, łatwy:undemanding
+praca:work
+weterynarz:vet
+niebezpieczny:dangerous
+kelner:waiter
+kelnerka:waitress
+pisarz:writer
+komik; artysta komediowy:comedian
+stolarz; cieśla:carpenter
+portier; odźwierny:doorman
+złota rączka:handyman
+stresujący:stressful
+pracować jako:work as
+szukać czegoś:look for
+doradca:counsellor
+psychiatra:psychiatrist
+wykwalifikowany:skilled
+redaktor:editor
+pracownik biura podróży:travel agent
+satysfakcjonujący:satisfying
+fizyczny, ręczny:manual
+w pracy:at work
+prezenter telewizyjny:TV presenter
+pracować w dziale sprzedaży:work in sales
+utrzymywać się z czegoś:do something for a living
+pracować w zespole:work in a team
+pracować pod presją:work under pressure
+zarządzać czymś, odpowiadać za coś:be in charge of
+dyrektor generalny:chief executive
+zawód; profesja:profession
+specjalista odżywiania, dietetyk:nutritionist
+grafik; grafik komputerowy:graphic designer
+pracować nad:work on
+pracować w firmie:work for a company
+pracować z:work with
+pracować w:work in
+pracować w biurze:work in an office
+wziąć odpowiedzialność za:take responsibility for
+wziąć urlop, wziąć wolne:take time off
+przyjąć:take on
+pracować zdalnie:work from home
+dziedzictwo; spadek; spuścizna:inheritance
+przejąć:take over
+mieć elastyczne godziny pracy:work flexitime
