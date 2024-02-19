@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import ElementNotInteractableException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains 
 import time
 
 username = ""
@@ -9,7 +10,7 @@ password = ""
 
 words_list = {}
 
-words_file = open(r"slownik.txt", 'r', encoding='utf-8')
+words_file = open(r"slownik.txt", 'a+', encoding='utf-8')
 for x in words_file:
     x_corrected = x.rstrip('\n')
     words_list[x_corrected.split(":")[0]] = x_corrected.split(":")[1]
@@ -26,9 +27,9 @@ driver.set_window_size(1200, 900)
 driver.get("https://instaling.pl/")
 assert "Insta.Ling" in driver.title
 main_login_button = driver.find_element(By.CSS_SELECTOR, "a[class='btn navbar-profile p-0 m-0 pr-2']")
-zgody_marketingowe = driver.find_element(By.CSS_SELECTOR, "p[class='fc-button-label']")
+jebane_zgody = driver.find_element(By.CSS_SELECTOR, "p[class='fc-button-label']")
 #klikniecie na przycisk zaloguj na stronie glownej
-zgody_marketingowe.click()
+jebane_zgody.click()
 time.sleep(1)
 main_login_button.click()
 time.sleep(1)
@@ -50,6 +51,7 @@ time.sleep(1)
 try:
     start_session_button = driver.find_element(By.CSS_SELECTOR, "div[id='start_session_button']")
     # klikniecie na przycisk rozpoczęcia sesji
+    # ActionChains(driver).move_to_element(start_session_button).click().perform()
     start_session_button.click()
     time.sleep(1)
 except ElementNotInteractableException:
@@ -75,7 +77,10 @@ while True:
             check_button.click()
         except ElementNotInteractableException:
             xnext = driver.find_element(By.ID, "know_new")
-            xnext.click()
+            try:
+                xnext.click()
+            except ElementNotInteractableException:
+                break
             time.sleep(1)
             skip = driver.find_element(By.ID, "skip")
             skip.click()
@@ -85,7 +90,7 @@ while True:
         answer = driver.find_element(By.ID, "word").text
         print("Odpowiedz: " + answer)
         words_list[word] = answer
-        words_file = open(r"slownik.txt", 'a', encoding='utf-8')
+        words_file = open(r"slownik.txt", 'a+', encoding='utf-8')
         words_file.write("\n"+word+":"+answer)
         words_file.close()
         time.sleep(1)
